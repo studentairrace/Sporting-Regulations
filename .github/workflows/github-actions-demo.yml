@@ -12,7 +12,7 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
-          
+
 #  build:
 #    runs-on: ubuntu-latest
 #    container: texlive/texlive:latest
@@ -23,9 +23,9 @@ jobs:
 #    - name: Build pdf
 #      run: make pdf
 
-    - name: Upload pdf
-      uses: actions/upload-artifact@v2
-      with:
-        name: rulebook
-        path: build/main.pdf
-        retention-days: 14
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: rulebook
+          path: build/main.pdf
+          retention-days: 14
