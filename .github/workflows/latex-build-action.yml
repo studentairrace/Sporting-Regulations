@@ -23,9 +23,9 @@ jobs:
 #    - name: Build pdf
 #      run: make pdf
 
-      - name: Upload pdf
+      - name: Upload pdf as Artifact
         uses: actions/upload-artifact@v2
         with:
           name: rulebook
-          path: build/main.pdf
+          path: main.pdf
           retention-days: 14
