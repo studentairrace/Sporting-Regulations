@@ -1,5 +1,3 @@
 /out/*
 /build/*
-main.*
-!main.tex
-!main.pdf
+!star_sporting_regulations.pdf

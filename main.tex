@@ -1,9 +1,9 @@
-\RequirePackage[l2tabu,orthodox]{nag}
+%\RequirePackage[l2tabu,orthodox]{nag}
 
 
 % TODO: decide if one-sided/two-sided
 %\documentclass[headseplines,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
-\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+\documentclass[oneside]{article} % one-sided
 
 % TODO: change citation style in settings
 \input{settings}
@@ -23,22 +23,22 @@
 \pagenumbering{alph}
 \input{pages/cover}
 
-\frontmatter{}
+%\frontmatter{}
 
 %\input{pages/title}
 \microtypesetup{protrusion=false}
 \tableofcontents{}
 \microtypesetup{protrusion=true}
 
-\mainmatter{}
+%\mainmatter{}
 
 
 \input{chapters/SportingRegulations}
-\input{chapters/Technical}
-\input{chapters/Event}
+%\input{chapters/Technical}
+%\input{chapters/Event}
 % TODO: add more chapters here
 
-\appendix{}
+%\appendix{}
 
 %\microtypesetup{protrusion=false}
 %\listoffigures{}
