@@ -27,5 +27,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: rulebook
-          path: sporting_regulations.tex
+          path: sporting_regulations.pdf
           retention-days: 14
