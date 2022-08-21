@@ -1,3 +1,3 @@
-/out/*
+/out/*.
 /build/*
 !star_sporting_regulations.pdf
