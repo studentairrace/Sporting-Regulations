@@ -235,9 +235,9 @@
           \hline
           Safety & 25 & Jury Decision \\ 
           \hline
-          Design Maturity & 25 & Jury Decision \\ 
+          Design Maturity and Technical Report & 35 & Jury Decision \\ 
           \hline
-          Innovation and sustainability & 25 & Jury Decision \\ 
+          Innovation and sustainability & 15 & Jury Decision \\ 
           \hline
         \end{tabular}
       \end{center}
@@ -326,6 +326,21 @@
 
     \section{Disciplines}
     \subsection{Thrust Test Stand}
+    \textbf{Disciple Outline}
+    The thrust test stand is a crucial part of the Scrutineering process and ensures that teams meet all the necessary requirements outlined in the technical regulations. It also serves as a means for organizers to assess the safety and reliability of the teams' vehicles and their technical condition. A successful performance in this discipline is required to qualify for takeoff clearance for the Hotlap races.
+    \begin{itemize}
+      \item Each team must demonstrate their vehicle's performance on the thrust test stand.
+      \item Each team will be assigned a specific time for their vehicle to be tested and must be ready at that time.
+      \item The vehicle must be mounted on the thrust test stand using the adapter specified in the technical regulations.
+      \item The team must run their vehicle for at least 50\% of their battery capacity on the thrust test stand.
+      \item The shape of the used thrust curve over time is at the discretion of the competitors.
+      \item The team must complete the thrust test stand event within 15 minutes. Failing to do so or not utilizing at least 50\% of the battery capacity will result in a penalty.
+      \item The vehicle must achieve a minimum peak force of \textcolor{red}{300N} for at least 5 seconds.
+      \item The teams are responsible for securing their aircraft on the thrust test stand.
+      \end{itemize}
+
+
+
     \subsection{Hotlap races}
     \textbf{Disciple Outline}
     \begin{itemize}
@@ -334,7 +349,7 @@
       \item Each team is only allowed to set a maximum of five timed (5) laps during their time window. 
       \item Each laptime will be logged by the organizer. It counts as the time from which the aircraft passes the start/timing line until the aircraft has crossed the timing/finish line. 
       \item The points will be awarded in order of fastest hotlap achieved by each of the teams during their time window.
- \end{itemize}
+    \end{itemize}
 
     \textcolor{red}{German has had some good ideas about adding a landing challenge after the hotlap races. They are already considered within the point distribution. I'm scared to make it too complicated though.}
 
@@ -399,14 +414,123 @@
       \item If two or more competitors achieve the exact same finish time, their points will be added together and divided equally across the them.  
     \end{itemize}
 
+    \subsection{Autonomous Races}
+    The autonomous races will test the ability of the teams to develop and implement autonomous control algorithms for their drones. These races will be held on a separate track and will have their own set of rules.
+
+    \subsubsection{Race Rules}
+    \begin{enumerate}
+    \item The following rules apply in combination with the later specified Race Procedures.
+    \item Each team must design and program their own autonomous control algorithms for their drones.
+    \item Teams may choose to build a new drone specifically for the autonomous races, as long as it meets all the technical regulations outlined in the technical regulations.
+    \item Alternatively, teams may use the same drone for both the manual and autonomous disciplines.
+    \item All calculations for autonomous control algorithms must be run onboard the drone and cannot be executed from a ground station or other external computing device.
+    \item The drone may communicate with external devices for the purpose of receiving location data or other necessary information, but all control and decision-making processes must be performed onboard the drone.
+    \item Each lap must be completed autonomously by the drone without a single intervention by a human. Otherwise the lap will be invalidated.
+    \item The drones must pass through every gate on the course. Missing a gate will result in a time penalty.
+    \item If a gate is defined as a pole, drones must pass the pole on the side specified by the organizers. Failing to do so will result in a time penalty.
+    \item Drones must remain within the flight perimeter, or geocage, at all times. Any drone found to be flying outside the geocage may be disqualified or face penalties.
+    \item The start gate can be crossed at any velocity. Teams are allowed to have a run-up, provided it does not exceed the boundaries of the location.
+    \item The points will be awarded in order of fastest lap achieved by each of the teams during the race.
+    \item If two or more competitors achieve the exact same finish time, their points will be added together and divided equally across them.
+    \item Teams are expected to follow all additional rules and guidelines provided by the organizers. Dangerous flying are having no clear intend to properly fly the laps will immediately result in disqualification.
+    \end{enumerate}
+
+    \subsubsection{Manual Control, Safety Functions, and Autonomous Flight}
+    \begin{enumerate}[resume]
+    \item The drone used in the autonomous race must be capable of both manual control and autonomous flight.
+    \item All drones used in the autonomous races must also be able to be manually controlled by the team and always manually overwritable.
+    \item The drone's autonomous control algorithms must have safety functions such as kill switches and Return to Home (RTH) capabilities built in.
+    \item The team must be able to trigger these safety functions at any time during the race if necessary.
+    \item The drone must be presented to the scrutineering committee prior to the start of the autonomous race to ensure that it meets all manual control, safety function, autonomous flight requirements and the technical regulations.
+    \item The team may use manual flight to move the drone to the designated starting position or landing spot before the race begins, or to interfere with the drone during the race if necessary for safety reasons or to abort a lap.
+    \item Once the race begins at the start gate, the drone must autonomously fly the course without any further manual flight input.
+    \item Any manual flight input between the start gate and finish gate that affects the drone's flight path or speed will result in an invalid lap time.
+    \item The team may be allowed to retake the lap if the manual flight input was due to safety reasons and was not the fault of the team.
+    \item Violation of the rules regarding manual control, safety functions, and autonomous flight may result in disqualification.
+    \end{enumerate}
+
+
+
+
+
+    \subsubsection{Race Procedures}
+    \textbf{Start of the Autonomous Race}
+    \begin{enumerate}
+    \item Each team will be given a \textcolor{red}{fivteen (15)} minute time window during which they can conduct their flights. 
+    \item The organizer will ensure that the time window can only start if a set of weather conditions is met. Once the race starts, there is no going back.
+    \item The race will begin with the start gate opening, and each drone will begin racing autonomously.
+    \item The teams are free to program their drones as they see fit, as long as all other rules are adhered to. This is up to their strategy.
+    \end{enumerate}
+
+    \textbf{Suspension of the Autonomous Race}
+    \begin{enumerate}[resume]
+    \item The race can be suspended by the organizer in case of unexpected events such as uninvolved people or aircraft entering the flight test area. A sudden change of weather which exceeds the limits set by the organizer may also lead to a suspension of the race.
+    \item In case of a suspension, the drones must immediately stop racing, changed to manual control and return to the start gate or follow instructions by the organizer.
+    \item The pilot must stay away as far as possible from uninvolved people as possible at any point in time.
+    \item Further actions will be discussed together with the organizers depending on the situation.
+    \end{enumerate}
+
+    \textbf{Resumption after Suspension of the Autonomous Race}
+    \begin{enumerate}[resume]
+    \item The race will resume once the suspension is lifted.
+    \item Depending on the situation, the organizers may add additional time to the race, and/or allow the competitors to recharge their batteries to a certain level in order to compensate for the suspension.
+    \end{enumerate}
+
+
+
     \section{Reports}
 
-    \subsection{Technical Report}
-
-      \subsubsection{Innovation and sustainability}
-
-    \subsection{Safety Report}
+    \subsection{Design Maturity and Technical Report}
+    \subsubsection{Technical Report}
+    \begin{enumerate}
+    \item Each team must submit a technical report before the start of the competition that outlines the technical details of their drone.
+    \item The technical report must include details such as the drone's weight, dimensions, power source, flight time, range, maximum speed, and any other technical specifications required by the organizers.
+    \item The technical report must also include information about the drone's control system, sensors, communication systems, and any other relevant components or subsystems.
+    \item The technical report must be a maximum of 10 pages long, written in English, and submitted in PDF format.
+    \item The technical report will be graded by a jury and is worth a maximum of 20 points.
+    \item The jury will evaluate the technical report based on the level of detail provided, the quality of the engineering and design work, and the overall technical feasibility of the drone.
+    \item Teams may use the technical report as an opportunity to highlight any innovative or unique features of their drone's design or technology.
+    \item The technical report may also be used by the jury to determine whether a team is eligible to participate in the competition or to determine penalties or disqualifications for technical violations during the competition.
+    \end{enumerate}
     
+    \subsubsection{Design Maturity}
+    \begin{enumerate}
+    \item Each team's drone must meet minimum standards of design maturity to be eligible for participation in the competition.
+    \item The drone's physical construction must be of professional quality and meet acceptable aviation standards. This includes no hanging cables, proper soldering, and proper engineering practices.
+    \item The team must demonstrate a high level of care and attention to detail in the construction and presentation of their drone.
+    \item The design maturity evaluation will be worth a maximum of 15 points and will be based on the quality of the drone's construction and presentation.
+    \item The jury may evaluate the design maturity of the drone at any point during the competition and may disqualify any team whose drone does not meet minimum design maturity standards.
+    \end{enumerate}
+    
+    
+    
+    
+    \subsection{Innovation and Sustainability Report}
+    The innovation and sustainability report is an opportunity for teams to demonstrate their commitment to sustainable innovation, and to showcase the potential of their drone's features for promoting sustainability in aviation.
+    \begin{enumerate}
+    \item Each team must submit an innovation and sustainability report before the start of the competition that outlines the innovative and sustainable features of their drone.
+    \item The innovation and sustainability report must include details such as how the team's drone uses sustainable materials, energy-efficient systems, or innovative features to solve a real-world problem.
+    \item The innovation and sustainability report must be a maximum of 15 pages long, written in English, and submitted in PDF format.
+    \item The innovation and sustainability report will be graded by a jury and is worth a maximum of 15 points.
+    \item The jury will evaluate the innovation and sustainability report based on the level of detail provided, the originality and creativity of the team's approach, and the potential impact of the drone's features on sustainability or innovation.
+    \end{enumerate}
+    
+    \subsection{Safety Report}
+    Safety is the top priority of Student AirRace. Teams must submit a safety report detailing their drone's safety features, procedures, and pilot training. The report helps teams identify and mitigate safety risks and highlight safety features. The jury evaluates the report to determine eligibility and penalties for safety violations.
+    \begin{enumerate}
+    \item Each team must submit a safety report before the start of the competition that outlines the safety features and procedures of their drone.
+    \item The safety report is a crucial aspect of the competition and is taken very seriously. Failure to submit a safety report, or failure to provide a thorough and accurate report, may result in penalties or disqualification. It is important for teams to prioritize safety and take the safety report seriously to ensure the safety of all participants and spectators.
+    \item The safety report may include details such as how the team's drone ensures the safety of the pilot, spectators, and other aircraft in the area.
+    \item The safety report may be a maximum of 20 pages long, written in English, and submitted in PDF format.
+    \item The safety report will be graded by a jury and is worth a maximum of 25 points.
+    \item The jury may evaluate the safety report based on the level of detail provided, the effectiveness of the safety features and procedures, and the overall safety of the drone and its operation.
+    \item The safety report may also include details about the team's pilot training and qualifications, as well as the training and qualifications of any personnel involved in the drone's operation or maintenance.
+    \item The team may also provide information about any redundancy features of the drone, such as redundant power sources or communication systems.
+    \item The safety report may detail the total number of flight hours completed by the drone and any previous crashes or incidents, along with the lessons learned from those incidents and any changes made to improve safety.
+    \item Teams may also use the safety report as an opportunity to highlight any safety features or procedures that may impact the drone's performance negatively, but which provide a significant increase in safety.
+    \item The jury will evaluate the safety report based on how well the team is able to demonstrate their commitment to safety and their ability to identify and mitigate potential safety risks.
+    \item The safety report may be used by the jury to determine whether a team is eligible to participate in the competition, or to determine whether any penalties or disqualifications may be warranted in the event of a safety violation during the competition.
+    \end{enumerate}
     
 
   
