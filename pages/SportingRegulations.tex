@@ -13,7 +13,7 @@
 \newpage
 {\bf Preface}
 \\ \\ Welcome to the Student AirRace competition! \\ \\
-Get ready for an adrenaline-pumping experience as you showcase your talents and skills in the thrilling world of drone racing. 
+Get ready for an adrenaline-pumping experience as you showcase your talents and skills in the thrilling world of Hyperdrone-racing. 
 For our team, this competition has been a dream come true, and we are honored to host it. 
 At Student AirRace, our vision is to become the premier air race competition for students and one day, maybe even evolve into manned aircraft competitions.
 \\ \\ 
@@ -21,6 +21,8 @@ Safety is our top priority, and we are dedicated to ensuring that all participan
 We understand that the technology and regulations surrounding drones, eVTOLs, and UAS are constantly evolving, and we have done our best to create regulations that are comprehensive and up-to-date with the current state of the industry. 
 However, we also understand that there is always room for improvement, and we welcome any feedback you may have to help us make this competition even better.
 \\ \\ 
+For this reason we have created a new type of racing drone - the Hyperdrone-class! Introducing a brand new class of unmanned aerial vehicles, designed to push the limits of what's possible in drone racing. With a Maximum Takeoff Weight of up to 25kg, these cutting-edge Hyperdrones are the first of their kind and are set to racing to the next level. This document provides you with all the technical guidelines you need to know to prepare a vehicle of this exhilarating new class. 
+\\ \\
 We have put a lot of hard work and dedication to get to this point and we can't wait to see what you have to bring to the table. 
 We hope you will not only have fun, but also learn a lot and make valuable connections in the industry. 
 Get ready to push your limits and soar to new heights as we witness the innovative solutions and ideas you will bring to the competition. 
@@ -44,7 +46,7 @@ If you were looking for the technical regulations governing the construction and
 \begin{itemize}
   \item Contents marked in \textcolor{red}{red} are still subject to change and should be seen as current estimations and placeholders.
   \item This whole document is still a work in progress. Some points may still be left empty.
-  \item If you have any comments on specific regulations, for example, think that they are not required, are too strict or don't make sense, don't hesitate to contact regulations@student-airrace.com.
+  \item If you have any comments on specific regulations, for example, think that they are not required, are too strict or don't make sense, don't hesitate to contact info@student-airrace.com.
 \end{itemize}
 }
 \hspace{10mm}
@@ -52,27 +54,10 @@ If you were looking for the technical regulations governing the construction and
 {\bf Abbrevations:}
 \begin{tabbing}
   {\bf AI~~~~~~~~~~~~~~} \= Artificial Inteligence
-  \\{\bf ARP} \> Aeronautical Recommended Practices
-  \\{\bf CE} \> Conformité Européene (European Conformity)
-  \\{\bf DC} \> Direct Current
-  \\{\bf EASA} \> European Union Aviation Safety Agency
-  \\{\bf e-ID} \> electronic identification
-  \\{\bf EU} \> European Union
-  \\{\bf EU-LBT} \> EU Listen Before Talk
-  \\{\bf EIRP} \> Equivalent Isotropically Radiated Power
-  \\{\bf ESC} \> Electronic Speed Controller
-  \\{\bf EUROCAE} \> European Organisation for Civil Aviation Equipment
-  \\{\bf FPV} \> First Person View
-  \\{\bf HITL} \> Hardware-in-the-loop
-  \\{\bf ICAO} \> International Civil Aviation Organization
-  \\{\bf ISO} \> International Organization for Standardization
-  \\{\bf Lipo} \> Lithium Polymer
-  \\{\bf LTE} \> Long-term Evolution
+  \\{\bf eVTOL} \> electrical Vertical TakeOff and Land
   \\{\bf MTOW} \> Maximum Take-Off Weight
-  \\{\bf NOTAMS} \> Notice to Airmissions
-  \\{\bf RC} \> Remote Control
+  \\{\bf PDR} \> Preliminary Design Review
   \\{\bf RTH} \> Return to Home
-  \\{\bf SORA} \> Standard Operating Risk Assessment
   \\{\bf UAS} \> Unmanned Aerial System
   \\{\bf UAV} \> Unmanned Aerial Vehicle
 \end{tabbing}
@@ -87,9 +72,17 @@ If you were looking for the technical regulations governing the construction and
  \section{Competition Outlines}
   
 \subsection{Objective of the competition}
-   \begin{enumerate}
-      \item \emph{What are our values? What is the ultimate goal of the competition? What do we want to achieve?}
-    \end{enumerate}
+
+\begin{itemize}
+  \item The primary objective of the Student AirRace competition is to provide a unique and immersive opportunity for students to familiarize themselves with the cutting-edge field of unmanned aerial vehicles (UAVs) and urban air mobility.
+  \item As an organization committed to ensuring the highest standards of safety, Student AirRace places safety at the forefront of all competition activities. All teams are expected to prioritize safe operation and development practices in their competition preparations.
+  \item With a vision to become the leading student competition for hyperdrone racing, Student AirRace strives to create an engaging and exciting environment for students to showcase their skills and knowledge in the field of unmanned aerial vehicles.
+  \item In order to achieve our mission, we rely on the active participation and dedication of our competitors. All participants have to give their utmost effort in supporting both their own team and the broader Student AirRace community. Together, we can achieve new heights in the exciting and rapidly evolving field of unmanned aerial vehicles.
+\end{itemize}
+
+\begin{enumerate}
+ \item In order to achieve our mission, we rely on the active participation and dedication of our competitors. All participants have to give their utmost effort in supporting both their own team and the broader Student AirRace community. Together, we can achieve new heights in the exciting and rapidly evolving field of unmanned aerial vehicles.
+\end{enumerate}
 
 
     \subsection{Participants}
@@ -102,7 +95,7 @@ If you were looking for the technical regulations governing the construction and
       a student team from said university.
       \item If a students university already has a competing team, the student is not allowed to join a competing team of 
       another university.  
-      \item The team size is not limited to a maximum number of members. However the organizer may limit the of allowed on site participants to a maximum of \textcolor{red}{15} for each team at the final event.
+      \item The team size is not limited to a maximum number of members. However the organizer may limit the of allowed on site participants to a maximum of 15 for each team at the final event.
       \item PHD candidates who are still enrolled or working for the university are allowed to join the teams. 
     \end{enumerate}
 
@@ -336,7 +329,7 @@ If you were looking for the technical regulations governing the construction and
     \subsection{Design Maturity and Technical Report}
     \subsubsection{Technical Report}
     \begin{enumerate}
-    \item Each team must submit a technical report before the start of the competition that outlines the technical details of their drone.
+    \item Each team must submit a technical report before the start of the competition that outlines the technical details of their hyperdrone.
     \item The technical report must be submitted no later than 7 days prior to the competition. The exact deadline for submission will be announced to the teams in advance. Failure to submit the safety report by the deadline may result in penalties or disqualification at the discretion of the jury. It is the responsibility of each team to ensure timely submission of the safety report to avoid any adverse consequences.
     \item The technical report must include details such as the drone's weight, dimensions, power source, flight time, range, maximum speed, and any other technical specifications required by the organizers.
     \item The technical report must also include information about the drone's control system, sensors, communication systems, and any other relevant components or subsystems.
@@ -349,11 +342,11 @@ If you were looking for the technical regulations governing the construction and
     
     \subsubsection{Design Maturity}
     \begin{enumerate}
-    \item Each team's drone must meet minimum standards of design maturity to be eligible for participation in the competition.
+    \item Each team's hyperdrone must meet minimum standards of design maturity to be eligible for participation in the competition.
     \item The drone's physical construction must be of professional quality and meet acceptable aviation standards. This includes no hanging cables, proper soldering, and proper engineering practices.
     \item The team must demonstrate a high level of care and attention to detail in the construction and presentation of their drone.
     \item The design maturity evaluation will be worth a maximum of 15 points and will be based on the quality of the drone's construction and presentation.
-    \item The jury may evaluate the design maturity of the drone at any point during the competition and may disqualify any team whose drone does not meet minimum design maturity standards.
+    \item The jury may evaluate the design maturity of the hyperdrone at any point during the competition and may disqualify any team whose drone does not meet minimum design maturity standards.
     \end{enumerate}
     
     
@@ -364,14 +357,14 @@ If you were looking for the technical regulations governing the construction and
     \begin{enumerate}
     \item Each team must submit an innovation and sustainability report before the start of the competition that outlines the innovative and sustainable features of their drone.
     \item The innovation and sustainability report must be submitted no later than 7 days prior to the competition. The exact deadline for submission will be announced to the teams in advance. Failure to submit the safety report by the deadline may result in penalties or disqualification at the discretion of the jury. It is the responsibility of each team to ensure timely submission of the safety report to avoid any adverse consequences.
-    \item The innovation and sustainability report must include details such as how the team's drone uses sustainable materials, energy-efficient systems, or innovative features to solve a real-world problem.
+    \item The innovation and sustainability report must include details such as how the team's hyperdrone uses sustainable materials, energy-efficient systems, or innovative features to solve a real-world problem.
     \item The innovation and sustainability report must be a maximum of 15 pages long, written in English, and submitted in PDF format.
     \item The innovation and sustainability report will be graded by a jury and is worth a maximum of 25 points.
     \item The jury will evaluate the innovation and sustainability report based on the level of detail provided, the originality and creativity of the team's approach, and the potential impact of the drone's features on sustainability or innovation.
     \end{enumerate}
     
     \subsection{Safety Report}
-    Safety is the top priority of Student AirRace. Teams must submit a safety report detailing their drone's safety features, procedures, and pilot training. The report helps teams identify and mitigate safety risks and highlight safety features. The jury evaluates the report to determine eligibility and penalties for safety violations.
+    Safety is the top priority of Student AirRace. Teams must submit a safety report detailing their hyperdrone's safety features, procedures, and pilot training. The report helps teams identify and mitigate safety risks and highlight safety features. The jury evaluates the report to determine eligibility and penalties for safety violations.
     \begin{enumerate}
     \item Each team must submit a safety report before the start of the competition that outlines the safety features and procedures of their drone.
     \item The safety report is a crucial aspect of the competition and is taken very seriously. Failure to submit a safety report, or failure to provide a thorough and accurate report, may result in penalties or disqualification. It is important for teams to prioritize safety and take the safety report seriously to ensure the safety of all participants and spectators.
@@ -495,7 +488,7 @@ If you were looking for the technical regulations governing the construction and
     \textbf{Disciple Outline}
     \begin{itemize}
       \item There will be a total of three (3) hotlap races on different tracks during the competition. The following rules apply to a single race.
-      \item Each team will be given a \textcolor{red}{fivteen (15) } minute time window during which they can conduct their flights. 
+      \item Each team will be given a fivteen (15) minute time window during which they can conduct their flights. 
       \item Each team is only allowed to set a maximum of five timed (5) laps during their time window. 
       \item Each laptime will be logged by the organizer. It counts as the time from which the aircraft passes the start/timing line until the aircraft has crossed the timing/finish line. 
       \item The points will be awarded in order of fastest hotlap achieved by each of the teams during their time window.
@@ -508,7 +501,7 @@ If you were looking for the technical regulations governing the construction and
       \item Teams are required to pass through every gate on the course. Missing a gate will result in the lap time being invalidated.
       \item If a gate is defined as a pole, teams must pass the pole on the side specified by the organizers. Failing to do so will result in the lap time being invalidated.
       \item Teams must ensure their drones remain within the flight perimeter, or geocage, at all times. Any drone found to be flying outside the geocage may be disqualified or face penalties.
-      \item Each drone will be able to fly their hotlap individually, with no other drones operating simultaneously. This is to ensure safety and avoid interference during the race.
+      \item Each hyperdrone will be able to fly their hotlap individually, with no other drones operating simultaneously. This is to ensure safety and avoid interference during the race.
       \item The start gate can be crossed at any velocity. Teams are allowed to have a run-up, provided it does not exceed the boundaries of the location.
       \item A lap can be aborted at any time at the team's discretion. If a lap is aborted, the time will be reset and will start again once the team's drone crosses the start gate for a new lap.
       \item Each team is allowed to pass through the start gate for a total of five times. However, they may conduct practice laps without crossing the start gate.  
@@ -524,7 +517,7 @@ If you were looking for the technical regulations governing the construction and
     \begin{enumerate}
       \item Each team gets a certain time slot during which they are allowed to conduct their hotlaps. 
       \item The organizer will ensure that the time is only started if a set of weather conditions is met. Afterwards there is no going back. This is comparable to the process ski jumpers undergo during their competitions.
-      \item The start of the session is called by the organizer. Afterfwards the clock is started and a \textcolor{red}{fivteen (15)} minute timer begins to tick down. The teams must conduct their hot laps within this time frame.
+      \item The start of the session is called by the organizer. Afterfwards the clock is started and a fivteen (15) minute timer begins to tick down. The teams must conduct their hot laps within this time frame.
       \item The teams are free to conduct flights however they'd like to during this time as long as all other rules are adhered to. This is up to their strategy. One team may fly three slow training laps and one racelap. Another team may set three race times or wait on the ground for exactly the right wind conditions.
     \end{enumerate}
     \textbf{Suspension of a Hotlap Race}
@@ -559,7 +552,7 @@ If you were looking for the technical regulations governing the construction and
     
     \begin{itemize}
       \item There will be a total of three (3) autonomous hotlap races on different tracks during the competition. The following rules apply to a single race.
-      \item Each team will be given a \textcolor{red}{fivteen (15) } minute time window during which they can conduct their flights. 
+      \item Each team will be given a fivteen (15) minute time window during which they can conduct their flights. 
       \item Each team is only allowed to set a maximum of five timed (5) laps during their time window. 
       \item Each laptime will be logged by the organizer. It counts as the time from which the aircraft passes the start/timing line until the aircraft has crossed the timing/finish line. 
       \item The points will be awarded in order of fastest autonomous hotlap achieved by each of the teams during their time window.
@@ -570,8 +563,8 @@ If you were looking for the technical regulations governing the construction and
     \begin{enumerate}
     \item The following rules apply in combination with the later specified Autnomous Race Procedures.
     \item Each team must design and program their own autonomous control algorithms for their drones.
-    \item Teams may choose to build a new second drone specifically for the autonomous races, as long as it meets all the technical regulations outlined in the technical regulations.
-    \item Alternatively, teams may use the same drone for both the manual and autonomous disciplines.
+    \item Teams may choose to build a new second hyperdrone specifically for the autonomous races, as long as it meets all the technical regulations outlined in the technical regulations.
+    \item Alternatively, teams may use the same hyperdrone for both the manual and autonomous disciplines.
     \item All calculations for autonomous control algorithms must be run onboard the drone and cannot be executed from a ground station or other external computing device.
     \item The drone may communicate with external devices for the purpose of receiving location data or other necessary information, but all control and decision-making processes must be performed onboard the drone.
     \item Each lap must be completed autonomously by the drone without a single intervention by a human. Otherwise the lap will be invalidated.
@@ -586,7 +579,7 @@ If you were looking for the technical regulations governing the construction and
 
     \subsubsection{Manual Control, Safety Functions, and Autonomous Flight}
     \begin{enumerate}[resume]
-    \item The drone used in the autonomous race must be capable of both manual control and autonomous flight.
+    \item The hyperdrone used in the autonomous race must be capable of both manual control and autonomous flight.
     \item All drones used in the autonomous races must also be able to be manually controlled by the team and always manually overwritable.
     \item A safety pilot must be in place to take over the drone by manual control.
     \item The drone must have the capability of triggering safety functions such as kill switches and Return to Home (RTH) capabilities.
@@ -606,7 +599,7 @@ If you were looking for the technical regulations governing the construction and
     \subsubsection{Race Procedures}
     \textbf{Start of the Autonomous Race}
     \begin{enumerate}
-    \item Each team will be given a \textcolor{red}{fivteen (15)} minute time window during which they can conduct their flights. 
+    \item Each team will be given a fivteen (15) minute time window during which they can conduct their flights. 
     \item The organizer will ensure that the time window can only start if a set of weather conditions is met. Once the race starts, there is no going back.
     \item The teams are free to program their drones/choose control algorithms however they like. This is up to their strategy. 
     \end{enumerate}
