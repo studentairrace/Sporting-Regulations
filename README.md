@@ -6,7 +6,7 @@ This Repository is equipped with a github action, that builds the tex files and 
 The Github action is triggered on each push or pull request on the master branch.
 
 ## Contribution
-If you are a temmember you can clone this repository and push directly to the master branch. If you are not a student airrace member you are suppose to fork this repository and create a pull request with your changes to the latest version branch.    
+If you are a temmember you can clone this repository and push directly to the master branch. If you are not a Student AirRace member you are suppose to fork this repository and create a pull request with your changes to the latest version branch.    
 
 ### Release Versioning
 The versions have the following format <YEAR>.<VERSION>.
