@@ -12,6 +12,7 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: sporting_regulations.tex
+          extra_system_packages: inkscape
 
 #  build:
 #    runs-on: ubuntu-latest
