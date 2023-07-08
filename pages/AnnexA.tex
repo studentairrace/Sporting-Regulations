@@ -1,0 +1,27 @@
+% !TeX root = ../star_sporting_regulations.tex
+% Add the above to each chapter to make compiling the PDF easier for some editors.
+
+\section*{Annex A}
+\subsection*{Race Track Layout}
+The racetrack is composed of ten gates, each consisting of two pylons. The pylons are equipped with ArUco markers at the front and the back so that the orientation and position of the pylon can uniquely identified. Figure \ref{fig:pylon.size} illustrates the pylons' dimensions and the position of the ArUco marker.
+\begin{figure}[H]
+  \centering
+  \includesvg[width=150pt]{Pylon_size}
+  \caption{Pylon size in cm}
+  \label{fig:pylon.size}
+\end{figure}
+A 15cm white border surrounds each ArUco marker to improve the detection success rate. That results in an ArUco size of 120cm. ArUco markers are encoded using an original dictionary.
+The two pylons of a gate are located 10m apart, and the ArUco IDs follow a simple rule to ensure that the hyperdrone can uniquely identify the gate as soon as one ArUco marker is detected. The markers in the front always have an even number, while the markers at the back encode an odd number. Figure \ref{fig:pylon-id} illustrates the IDs of the ArUco marker on the gate, while \(n\) encodes the gate number.
+\begin{figure}[H]
+  \centering
+  \includesvg[width=200pt]{Pylon-ID.svg}
+  \caption{Gate Marker IDs}
+  \label{fig:pylon-id}
+\end{figure}
+The racetrack forms a closed loop, and the gates are located so that the left pylon of the next gate is on a line perpendicular to the line connecting the two pylons of the previous gate and crossing its left pylon. The angle of the gates is either 45° or -45° with respect to the previous gate. That ensures that the ArUco marker can be detected by the hyperdrone. Figure \ref{fig:gate-orientation} illustrates two consecutive gates from a top view.
+\begin{figure}[H]
+  \centering
+  \includesvg[width=100pt]{GateOrientation.svg}
+  \caption{Gate orientation}
+  \label{fig:gate-orientation}
+\end{figure}

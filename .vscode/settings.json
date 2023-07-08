@@ -1,7 +1,23 @@
 {
-        // latex
-        "latex-workshop.latex.outDir": "./out",
-        "latex-workshop.synctex.afterBuild.enabled": true,
-        "latex-workshop.view.pdf.viewer": "tab"
-        // End
+      // latex
+      "latex-workshop.latex.outDir": "./out",
+      "latex-workshop.synctex.afterBuild.enabled": true,
+      "latex-workshop.view.pdf.viewer": "tab",
+      "latex-workshop.latex.tools": [
+            {
+                  "name": "latexmk",
+                  "command": "latexmk",
+                  "args": [
+                        "-shell-escape",
+                        "-synctex=1",
+                        "-interaction=nonstopmode",
+                        "-file-line-error",
+                        "-pdf",
+                        "-outdir=%OUTDIR%",
+                        "%DOC%"
+                  ],
+                  "env": {}
+            }
+      ]
+      // End
 }
