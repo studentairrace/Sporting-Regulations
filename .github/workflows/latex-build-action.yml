@@ -13,6 +13,7 @@ jobs:
         with:
           root_file: sporting_regulations.tex
           extra_system_packages: inkscape
+          latexmk_shell_escape: true
 
 #  build:
 #    runs-on: ubuntu-latest
