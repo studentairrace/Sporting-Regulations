@@ -8,7 +8,16 @@
 \\ \\ \\
 {\bf Changelog}
 \\ \\{\bf Current Version: \\Version Draft \getVersion{}}
-\\ \\Previous Versions: \\ No previous Versions
+\\ \\Changelog from previous versions: 
+\\ v0.1.1 - First Release version
+\\ v0.2 - Improved Release version (17.12.23): 
+\begin{itemize}
+  \item 7: Information and dates regarding the Preliminary Design Review have been changed. 
+  \item 11: Removed rules regarding the necessary battery drain on the Thrust Test Stand and made them easier to understand.
+  \item 9.3: Added race course information and example.
+  \item 10.5: Added information on Ground Control Station Setup.
+  \item 10.2: Changed Requirements for pilots. Simulator hours also applicable now.
+\end{itemize}
 
 \newpage
 {\bf Preface}
@@ -305,7 +314,7 @@ If you were looking for the technical regulations governing the construction and
 
     \section{Preliminary Design Review (PDR)}
     \begin{enumerate}
-    \item The PDR is conducted approximately nine (9) months prior to the event.
+    \item The PDR is conducted approximately two (2) months prior to the event.
     \item The purpose of the PDR is to ensure that the teams are on track with their development and that their aircraft meets the rules of the competition.
     \item The appointment for the PDR is made together with the teams and must be attended by the responsible team leads.
     \item During the PDR, the organizers will review the teams' progress and may ask questions to ensure that the teams understand the rules and have a clear path forward in their development.
@@ -319,7 +328,6 @@ If you were looking for the technical regulations governing the construction and
     \item A detailed description of the UAV's control and navigation systems.
     \item A list of all components used, including the specifications and supplier information.
     \end{itemize}
-    \item The PDR documentation must be submitted to the organizers at least two (2) weeks prior to the scheduled PDR appointment.
     \item The PDR will be conducted remotely, via video conference or other means as determined by the organizers.
     \end{enumerate}
 
@@ -431,20 +439,34 @@ If you were looking for the technical regulations governing the construction and
       \item No point within the race course layout is going to be further away than 1000m from the Ground Station. Also every point of the racecourse layout will be able to be flown within Line Of Sight of the Ground Station. 
       \item Race courses consist of an assembly of different predetermined race course elements which are published with the regulations.
       \item The official assembly of race course layouts for the three hotlap sessions will not be published until shortly before the competition, in order to prevent the teams from overfitting their aircraft to one specificn racecourse. 
-      \item Race course assembly kits are published in Annex A. 
-      \item The race courses are marked with the help of 12m high pylons or flags. 
+      \item The race courses are marked with the help of 6m or 12m high pylons or flags.
+      \item Each of the gates the teams have to fly through consitsts of two pylons which stand \textcolor{red}{12m} apart (subject to change with feedback by the teams).
+      \item In some occasions a single pylon may indicate a 180° turn around the pylon or a slalom parcour where each pylone must be passed from a different side. 
+      \item Each gate is at least 50m apart from the previous gate. The minimum turnradius (for non 180° degree turns is always at least 50m).
     \end{enumerate}
 
+    \begin{figure}[h!]
+      \centering
+       \IfFileExists{figures/StudentAirRaceTrackExample.png}{%
+       \includegraphics[height=70mm]{figures/StudentAirRaceTrackExample.png}
+       
+       }{%
+       \vspace*{70mm}
+       }
+     \caption{\textit{This figure illustrates an example of what a racecourse may look like. This is not to scale.}}
+     \end{figure}
 
-    \section{Flight Operations at the final competition}
+
+    \section{Flight Operations at the Final Competition}
     \begin{enumerate}
       \item During the flights, the teams must assign different roles within the team at the track, which are defined in the latter regulations.
       \item Each person which fullfills a required role must be able to fluently communicate to the organizers in english.
       \item A minimum of four (4) persons are required at the track to be allowed to conduct the flights.
       \item A maximum of ten (10) persons by a team are allowed at the track. For clarification: This does not affect the amount of persons each team is allowed to have in the paddock.  
+      \item The teams will be provided with a Ground Control Station at the location described within the Race Course Layout chapter. This Ground Control Station can be set up by the team however they please. It includes two 3mx3m tents which are open towards the front. Two tables and up to 6 seats. Those are the positions where the UAV should be operatored from.
     \end{enumerate}
 
-    \subsection{Required roles during Flight}
+    \subsection{Required Roles During Flight}
     \begin{enumerate}
       \item \textbf{PL: Pilot}\\The pilot is the person responsible for flying the UAV.
       \item \textbf{AO: Airspace Observer/Spotter}\\The AO stands next to the PL and has an unobstructed view of the airspace around the drone. They talk to the PL directly in person. The PL and AO are allowed to communicate via intercom if they stay right next to each other. 
@@ -454,11 +476,12 @@ If you were looking for the technical regulations governing the construction and
     \end{enumerate}
 
 
-    \subsection{Requirements for the pilots}\label{pilotrequirements}
+    \subsection{Requirements for the Pilots}\label{pilotrequirements}
     \begin{enumerate}
       \item Each team must have at least three different designated pilots. The names of those pilots must be sent to the organizer at least 
-      30 days before the competition. 
-      \item Each pilot must have flown and documented at least twenty (20) hours on comparable UAVs (e.g. Racing Quadrocopters) in the past 12 months.  
+      14 days before the competition. 
+      \item Each pilot must have flown and documented at least twenty (20) hours on comparable UAVs (e.g. Racing Quadrocopters) in the past 12 months. 
+      \item Up to 75 \% of those hours may be flown in simulators.
       \item The pilots must be able to fluently communicate with the organizers in English, in order to be able to follow safety relevant commands during flight.
       \item The pilots may have have to perform a flight test check in front of the organizers at the competition. This is just a quick test flight with any multicopter UAS to demonstrate the pilots basic flight skills.
     \end{enumerate}
@@ -474,9 +497,7 @@ If you were looking for the technical regulations governing the construction and
       \item Each team must demonstrate their vehicle's performance on the thrust test stand.
       \item Each team will be assigned a specific time for their vehicle to be tested and must be ready at that time.
       \item The vehicle must be mounted on the thrust test stand using the adapter specified in the technical regulations.
-      \item The team must run their vehicle for at least 50\% of their battery capacity on the thrust test stand.
-      \item The shape of the used thrust curve over time is at the discretion of the competitors.
-      \item The team must complete the thrust test stand event within 15 minutes. Failing to do so or not utilizing at least 50\% of the battery capacity will result in a penalty.
+      \item The shape of the used thrust curve over time is at the discretion of the competitors. The organizer may however demand certain thrust inputs for certain amount of times (for example 80 \% throttle for 10 seconds), which must then be followed by the competitor.
       \item The Thrust to Weight Ratio (TWR) of the vehicle, calculated from its weight during scrutineering, must be at least 2:1. The minimum Thrust measured on the vehicle Thrust Test Stand must exceed the required value to achieve this ratio for at least 5 seconds under standard atmospheric conditions.
       \item If the atmospheric conditions during testing do not meet the ICAO standard atmosphere conditions, a correction factor based on the current air density will be applied to the thrust stand results linearly.
       \item The teams are responsible for securing their aircraft on the thrust test stand.
@@ -484,7 +505,7 @@ If you were looking for the technical regulations governing the construction and
 
 
 
-    \subsection{Hotlap races}
+    \subsection{Hotlap Races}
     \textbf{Disciple Outline}
     \begin{itemize}
       \item There will be a total of three (3) hotlap races on different tracks during the competition. The following rules apply to a single race.
